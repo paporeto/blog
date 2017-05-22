@@ -1,0 +1,385 @@
+/*
+PARA A HONRA E GLÓRIA DE DEUS
+ARQUIVO .CSS PARA O BLOG PAPO RETO
+*/
+
+
+
+
+
+/*------------------------------------------------------------------
+CORES
+------------------------------------------------------------------*/
+.cor-base{
+	color: #101010 !important; 	/*	Tema Verde: 		#89e22d
+									Tema Dark:			#101010
+									Tema Light Dark:	#222222
+									Tema Light:			#ffffff*/
+}
+
+.cor-destaque{
+	color: #89e22d !important; 	/*	Tema Verde: 		#ffffff
+									Tema Dark:			#89e22d
+									Tema Light Dark:	#89e22d
+									Tema Light:			#101010*/
+}
+
+.cor-texto{
+	color: #222222 !important;
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+HTML GERAL
+------------------------------------------------------------------*/
+body {
+	background-color: #f0f0f0;
+	margin: 0;
+	padding: 0;
+	height: 1000px;
+}
+
+.title{
+	color: #f0f0f0 !important;
+	font-family:'Roboto Slab', serif;
+	font-weight: 900;
+	font-size: 5vw; 
+}
+
+.txt{
+	color: #222222 !important;
+	font-family:'Roboto', sans-serif;
+	font-size: 1vw; 
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+BOTÕES
+------------------------------------------------------------------*/
+.bt {
+	position: relative;
+	min-width: 150px;
+	height: 100px;
+	outline: 0;
+	margin: 0;
+	padding-left: 2.5px;
+	float: left;
+	border: none;
+}
+
+.bt {
+	overflow: hidden;
+	line-height: 100px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.15em;
+	font-weight: 800;
+	text-decoration: none;
+	text-align: center;
+}
+
+.bt:hover {
+	background-color: #222222;
+	transition: 0.2s ease;
+	overflow: hidden;
+}
+
+.bt:after {
+	content: '';
+	background: #89e22d;
+	position: absolute;
+	width: 0;
+	height:10px;
+	bottom: 0%;
+	left: 0%;
+	transition: 0.2s ease;
+}
+
+.bt:hover:after {
+	width: 100%;
+	overflow: hidden;
+}
+
+.drop-menu {
+	overflow: hidden;
+	position: relative;
+	min-width: 150px;
+	line-height: 95px;
+	height: 65px;
+	outline: 0;
+	margin: 0;
+	float: left;
+	border: none;
+	vertical-align: middle;
+	text-align: center;
+	background-color: #89e22d;
+}
+
+.drop-menu ~ .sub-content {
+	max-height: 0;
+}
+.drop-menu:focus ~ .sub-content {
+	max-height: 300px;
+	transition: 0.25s ease-in;
+}
+
+.drop-menu:hover:after ~ .sub-content {
+	max-height: 0;
+	transition: 0.25s ease-in;
+}
+
+.sub-content {
+	position: absolute;
+	top: 65px;
+	overflow: hidden;
+	background-color: #222;
+}
+
+.sub-content a {
+	color: #89e22d;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.15em;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+.sub-menu ul {
+	min-width: 150px;
+	margin: 0;
+	padding: 0;
+	line-height: 45px;
+	text-align: center;
+	list-style-type: none;
+}
+
+.material-icons {
+	font-size: 40px !important;
+	position: relative;
+	color: #222222;
+	font-family: 'Material Icons';
+  	font-weight: normal;
+  	font-style: normal;
+  	text-transform: none;
+  	word-wrap: normal;
+  	white-space: nowrap;
+  	direction: ltr;
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+CONTAINERS
+------------------------------------------------------------------*/
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+	width: 90%;
+}
+
+.direita {
+	right:0.5rem;
+	left: auto;
+	float: right !important;
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+MEDIA QUERIES
+------------------------------------------------------------------*/
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 685px){
+	.esconder-tp {
+		display: none !important;
+	}
+}
+
+@media only screen and (min-width: 686px){
+	.mostrar-tp {
+		display:none !important;
+	}
+}
+
+@media only screen and (max-width: 685px){
+	nav {
+		height: 65px !important;
+	}
+}
+
+@media only screen and (min-width: 686px){
+	nav {
+		height: 100px !important;
+	}
+}
+
+@media only screen and (max-width: 495px){
+	footer {
+		position: fixed !important;
+		left: 0% !important;
+		width: 100%	!important;
+	}
+}
+
+@media only screen and (max-width: 495px){
+	footer ul li{
+		font-size: 0.75rem;
+	}
+}
+
+@media only screen and (max-width: 495px){
+	footer ul {
+		width: 300px;
+		left:calc(50% + 30px) !important;
+	}
+}
+
+@media only screen and (max-width: 495px){
+	footer .develop {
+		bottom: 15% !important;
+	}
+}
+
+
+
+/*------------------------------------------------------------------
+NAVBAR
+------------------------------------------------------------------*/
+nav {
+	position: relative;
+	top: 0;
+	background-color: #101010;
+	width: 100%;
+}
+
+nav .logo {
+	white-space: nowrap;
+	padding: 0;
+	font-size: 2.1rem;
+	display: inline-block;
+	height: 60px;
+	padding: 20px;
+	padding-left: 40px;
+}
+
+nav .logo.tp {
+	position: relative;
+	height: 50px;
+	padding: 0;
+	left:60%;
+	transform: translate(-139%, 15%);
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+RIPPLE
+------------------------------------------------------------------*/
+.ripple {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.ripple:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #f0f0f0 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: pointer;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform .3s, opacity 1s;
+}
+
+.ripple:active:after {
+  transform: scale(0, 0);
+  opacity: .325;
+  transition: 0s;
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+FOOTER
+------------------------------------------------------------------*/
+footer {
+	padding:0;
+	position: fixed;
+	height: 70px;
+	width: 75%;
+	left: 12.5%;
+	bottom: 0%;
+	display: block;
+}
+
+footer {
+	background-color: #222;
+	color: #f0f0f0;
+}
+
+footer {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1rem;
+}
+
+footer a {
+	text-decoration: none;
+	color: #89e22d !important;
+}
+
+footer ul {
+	padding: 0; 
+	width: 315px;
+	position: absolute;
+	display: inline-block;
+	list-style-type: none;
+	vertical-align: middle;
+	left: 50%;
+	transform: translate(-50%, 0);
+	top: -10%;
+}
+
+footer ul li {
+	float: left;
+	padding: 10px;
+	text-decoration: none;
+}
+
+footer .develop {
+	min-width: 185px;
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50%,0);
+	font-size: 0.75rem;
+}
