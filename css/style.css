@@ -36,23 +36,48 @@ CORES
 HTML GERAL
 ------------------------------------------------------------------*/
 body {
-	background-color: #f0f0f0;
+	background-color: #d9d9d9 !important;
 	margin: 0;
 	padding: 0;
-	height: 1000px;
 }
 
-.title{
+.title {
+	position: relative;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%,-35%);
+	min-width: 700px;
+	padding: 0;
+	margin: 0 !important;
 	color: #f0f0f0 !important;
 	font-family:'Roboto Slab', serif;
 	font-weight: 900;
-	font-size: 5vw; 
+	font-size: 4.25vw;
+	text-shadow: 0px 2px 10px #222;
+	text-align: center !important;
 }
 
-.txt{
+.descript {
+	text-shadow: 0px 1px 2px #222;
+	max-width: 700px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	padding: 0px 25px;
+	margin-top: 80px;
+	position: relative;
+	color:#f0f0f0 !important;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-align: center;
+}
+
+h1 {
+	margin: 0 !important;
+}
+p {
 	color: #222222 !important;
 	font-family:'Roboto', sans-serif;
-	font-size: 1vw; 
+	font-weight: 300;
 }
 
 
@@ -62,6 +87,49 @@ body {
 /*------------------------------------------------------------------
 BOTÕES
 ------------------------------------------------------------------*/
+.bt-index {
+	position: absolute;
+	width: 300px !important;
+	height: 75px !important;
+	line-height: 75px;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, 60%);
+
+}
+
+.bt-index {
+	vertical-align: middle;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: 900;
+	border-style: solid;
+	color: #f0f0f0;
+	text-shadow: 0px 2px 4px #222;
+	border-color: #f0f0f0;
+	border-width: 2px;
+	border-radius: 2px;
+}
+
+.bt-index:hover {
+	top:57.5%;
+	box-shadow: 0px 8px 12px #222;
+	letter-spacing: 1px;
+	background-color: #89e22d;
+	color: #222;
+	text-shadow: 0px 0px 0px #89e22d;
+	transition: all 0.3s ease;
+	overflow: hidden;
+}
+
+.bt-index:before {
+	top:60%;
+	transition: all 0.3s ease;
+	overflow: hidden;
+}
+
 .bt {
 	position: relative;
 	min-width: 150px;
@@ -189,6 +257,14 @@ CONTAINERS
 	float: right !important;
 }
 
+.text-box {
+	background-color: #fff;
+	text-align: justify;
+	left:15%;
+	padding: 25px 50px;
+	box-shadow: 0px 4px 10px #222;
+}
+
 
 
 
@@ -234,7 +310,6 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 495px){
 	footer {
-		position: fixed !important;
 		left: 0% !important;
 		width: 100%	!important;
 	}
@@ -259,12 +334,73 @@ MEDIA QUERIES
 	}
 }
 
+@media only screen and (min-width: 1110px){
+	.title {
+		font-size: 3.8vw !important;
+	}
+}
+@media only screen and (max-width: 685px){
+	.parallax-div {
+		height: 300px !important;
+	}
+}
+
+@media only screen and (max-width: 1920px){
+	.texto-flex {
+		font-size: 2vw !important;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	.texto-flex {
+		font-size: 2.5vw !important;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	.texto-flex {
+		font-size: 3vw !important;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	.texto-flex {
+		font-size: 3.5vw !important;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.texto-flex {
+		font-size: 3.75vw !important;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.texto-flex {
+		font-size: 4vw !important;
+	}
+}
+
+@media only screen and (max-width: 1920px){
+	.text-box {
+		width:65%;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	.text-box {
+		width:60%;
+	}
+}
+
+
 
 
 /*------------------------------------------------------------------
 NAVBAR
 ------------------------------------------------------------------*/
 nav {
+	z-index: 2;
 	position: relative;
 	top: 0;
 	background-color: #101010;
@@ -334,11 +470,11 @@ FOOTER
 ------------------------------------------------------------------*/
 footer {
 	padding:0;
-	position: fixed;
+	position: relative;
 	height: 70px;
 	width: 75%;
 	left: 12.5%;
-	bottom: 0%;
+	bottom: 0;
 	display: block;
 }
 
@@ -382,4 +518,21 @@ footer .develop {
 	left: 50%;
 	transform: translate(-50%,0);
 	font-size: 0.75rem;
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+PARALLAX DIV
+------------------------------------------------------------------*/
+
+.parallax-div {
+	width: 100%;
+	height: 550px;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
