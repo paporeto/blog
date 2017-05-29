@@ -39,6 +39,9 @@ body {
 	background-color: #d9d9d9 !important;
 	margin: 0;
 	padding: 0;
+	display: block;
+	min-height: 100%;
+	transition: 0.3s ease;
 }
 
 .title {
@@ -80,6 +83,14 @@ p {
 	font-weight: 300;
 }
 
+.card-link {
+	text-decoration: none;
+}
+
+html {
+	height:100%;
+}
+
 
 
 
@@ -89,7 +100,7 @@ BOTÕES
 ------------------------------------------------------------------*/
 .bt-index {
 	position: absolute;
-	width: 300px !important;
+	width: 300px;
 	height: 75px !important;
 	line-height: 75px;
 	left: 50%;
@@ -103,7 +114,7 @@ BOTÕES
 	text-align: center;
 	font-family: 'Roboto Slab', serif;
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 	font-weight: 900;
 	border-style: solid;
 	color: #f0f0f0;
@@ -111,6 +122,7 @@ BOTÕES
 	border-color: #f0f0f0;
 	border-width: 2px;
 	border-radius: 2px;
+	transition: all 0.3s ease;
 }
 
 .bt-index:hover {
@@ -120,7 +132,6 @@ BOTÕES
 	background-color: #89e22d;
 	color: #222;
 	text-shadow: 0px 0px 0px #89e22d;
-	transition: all 0.3s ease;
 	overflow: hidden;
 }
 
@@ -247,8 +258,74 @@ CONTAINERS
 ------------------------------------------------------------------*/
 .container {
 	margin: 0 auto;
+	height: auto !important;
+	max-width: 1280px;
+	width: 95%;
+}
+
+.container-card {
+	margin: 0 auto;
 	max-width: 1280px;
 	width: 90%;
+}
+
+.l3 {
+	margin: 10px;
+	width: 30% !important;
+	float: left;
+}
+
+.inline {
+	margin: 16px 0px;
+	width: 100% !important;
+	float: left;
+}
+
+.inline .card-img {
+	font-size: 6.5vw !important;
+}
+.card {
+	overflow: hidden;
+	border-radius: 4px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: #222;
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.35);
+	transition: 0.2s ease;
+	padding-bottom: 1px;
+}
+.card:hover {
+	box-shadow: 0px 6px 12px rgba(0,0,0,0.55);
+	transform: scale(1.05);
+}
+
+.card-img {
+	border-radius: 4px 4px 0px 0px;
+	width: 100%;
+	padding: 25% 0%;
+	line-height: 60px;
+	background-position: center;
+	background-size: cover;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 900;
+	font-size: 2.5vw;
+	text-align: center;
+	color: #f0f0f0;
+}
+
+.card .data {
+	position: absolute;
+	padding-left: 10px;
+	width: 90px;
+	height: 40px;
+	background-color: #89e22d;
+	color: #222;
+	font-size: 20px;
+	font-weight: 900;
+	line-height: 40px;
+	letter-spacing: 1.2px;
+	font-family: 'Roboto Slab', serif;
+	border-radius: 4px 0px 4px 0px;
 }
 
 .direita {
@@ -258,6 +335,8 @@ CONTAINERS
 }
 
 .text-box {
+	overflow: hidden;
+	min-height: 400px;
 	background-color: #fff;
 	text-align: justify;
 	left:15%;
@@ -284,52 +363,64 @@ MEDIA QUERIES
   }
 }
 
-@media only screen and (max-width: 685px){
+@media only screen and (max-width: 735px){
 	.esconder-tp {
 		display: none !important;
 	}
 }
 
-@media only screen and (min-width: 686px){
+@media only screen and (min-width: 736px){
 	.mostrar-tp {
 		display:none !important;
 	}
 }
 
-@media only screen and (max-width: 685px){
+@media only screen and (max-width: 940px){
+	.esconder-med {
+		display: none !important;
+	}
+}
+
+@media only screen and (min-width: 941px){
+	.mostrar-med {
+		display:none !important;
+	}
+}
+
+@media only screen and (max-width: 735px){
 	nav {
 		height: 65px !important;
 	}
 }
 
-@media only screen and (min-width: 686px){
+@media only screen and (min-width: 736px){
 	nav {
 		height: 100px !important;
 	}
 }
 
-@media only screen and (max-width: 495px){
-	footer {
+@media only screen and (max-width: 605px){
+	.footer {
 		left: 0% !important;
 		width: 100%	!important;
 	}
 }
 
-@media only screen and (max-width: 495px){
-	footer ul li{
+@media only screen and (max-width: 525px){
+	.footer ul li{
 		font-size: 0.75rem;
 	}
 }
 
-@media only screen and (max-width: 495px){
-	footer ul {
-		width: 300px;
-		left:calc(50% + 30px) !important;
+@media only screen and (max-width: 525px){
+	.footer ul {
+		width: 330px;
+		left:calc(50% + 33px) !important;
 	}
 }
 
 @media only screen and (max-width: 495px){
-	footer .develop {
+	.footer .develop {
 		bottom: 15% !important;
 	}
 }
@@ -346,38 +437,74 @@ MEDIA QUERIES
 }
 
 @media only screen and (max-width: 1920px){
+	.descript {
+		font-size: 2.15vw !important;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	.descript {
+		font-size: 2.35vw !important;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	.descript {
+		font-size: 2.55vw !important;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	.descript {
+		font-size: 2.75vw !important;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.descript {
+		font-size: 2.95vw !important;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.descript {
+		font-size: 3.35vw !important;
+	}
+}
+
+@media only screen and (max-width: 1920px){
 	.texto-flex {
-		font-size: 2vw !important;
+		font-size: 1.75vw !important;
 	}
 }
 
 @media only screen and (max-width: 1100px){
 	.texto-flex {
-		font-size: 2.5vw !important;
+		font-size: 2.05vw !important;
 	}
 }
 
 @media only screen and (max-width: 1000px){
 	.texto-flex {
-		font-size: 3vw !important;
+		font-size: 2.25vw !important;
 	}
 }
 
 @media only screen and (max-width: 900px){
 	.texto-flex {
-		font-size: 3.5vw !important;
+		font-size: 2.45vw !important;
 	}
 }
 
 @media only screen and (max-width: 800px){
 	.texto-flex {
-		font-size: 3.75vw !important;
+		font-size: 2.65vw !important;
 	}
 }
 
 @media only screen and (max-width: 600px){
 	.texto-flex {
-		font-size: 4vw !important;
+		font-size: 3.05vw !important;
 	}
 }
 
@@ -468,9 +595,10 @@ RIPPLE
 /*------------------------------------------------------------------
 FOOTER
 ------------------------------------------------------------------*/
-footer {
+.footer {
 	padding:0;
 	position: relative;
+	bottom: 0 !important;
 	height: 70px;
 	width: 75%;
 	left: 12.5%;
@@ -478,22 +606,22 @@ footer {
 	display: block;
 }
 
-footer {
+.footer {
 	background-color: #222;
 	color: #f0f0f0;
 }
 
-footer {
+.footer {
 	font-family: 'Roboto Slab', serif;
 	font-size: 1rem;
 }
 
-footer a {
+.footer a {
 	text-decoration: none;
 	color: #89e22d !important;
 }
 
-footer ul {
+.footer ul {
 	padding: 0; 
 	width: 315px;
 	position: absolute;
@@ -505,13 +633,13 @@ footer ul {
 	top: -10%;
 }
 
-footer ul li {
+.footer ul li {
 	float: left;
 	padding: 10px;
 	text-decoration: none;
 }
 
-footer .develop {
+.footer .develop {
 	min-width: 185px;
 	position: absolute;
 	bottom: 10%;
