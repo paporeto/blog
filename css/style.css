@@ -15,7 +15,7 @@ CORES
 }
 
 .cor-destaque{
-	color: #435c7a !important;
+	color: #FFF !important;
 }
 
 .cor-texto{
@@ -41,7 +41,7 @@ body {
 }
 
 body {
-	background-color: #d9d9d9 !important;
+	background-color: #fafafa !important;
 	margin: 0;
 	padding: 0;
 	display: block;
@@ -135,8 +135,8 @@ BOTÕES
 	top:68.25%;
 	box-shadow: 0px 8px 12px #222;
 	letter-spacing: 1px;
-	background-color: #435c7a;
-	text-shadow: 0px 0px 0px #435c7a;
+	background-color: #00ff8a;
+	text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
 }
 
@@ -166,18 +166,18 @@ BOTÕES
 	text-decoration: none;
 	text-align: center;
 	letter-spacing: 1.85px;
-	transition: 0.3s ease;
+	transition: 0.35s ease;
 }
 
 .bt:hover {
-	background-color: #fff;
-	letter-spacing: 3.85px;
+	background-color: #00daaa;
+	letter-spacing: 4px;
 	overflow: hidden;
 }
 
 .bt:after {
 	content: '';
-	background: #435c7a;
+	background: #FFF;
 	position: absolute;
 	width: 0;
 	height:10px;
@@ -224,6 +224,14 @@ CONTAINERS
 	width: 90%;
 }
 
+.container-card h3 {
+	color:#222 !important;
+}
+
+.container-card p {
+	color:#777 !important;
+}
+
 .l3 {
 	margin: 10px;
 	width: 30% !important;
@@ -240,17 +248,17 @@ CONTAINERS
 	font-size: 6.5vw !important;
 }
 .card {
+	background-color: #fff;
 	overflow: hidden;
 	border-radius: 4px;
 	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
-	color: #222;
-	box-shadow: 0px 4px 8px rgba(0,0,0,0.35);
+	box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
 	transition: 0.2s ease;
 	padding-bottom: 1px;
 }
 .card:hover {
-	box-shadow: 0px 6px 12px rgba(0,0,0,0.55);
+	box-shadow: 0px 6px 8px rgba(0,0,0,0.15);
 	transform: scale(1.05);
 }
 
@@ -273,8 +281,8 @@ CONTAINERS
 	padding-left: 10px;
 	width: 90px;
 	height: 40px;
-	background-color: #435c7a;
-	color: #fff;
+	background-color: #00ff8a;
+	color: #222;
 	font-size: 20px;
 	font-weight: 900;
 	line-height: 40px;
@@ -292,11 +300,9 @@ CONTAINERS
 .text-box {
 	overflow: hidden;
 	min-height: 400px;
-	background-color: #fff;
 	text-align: justify;
 	left:15%;
 	padding: 25px 50px !important;
-	box-shadow: 0px 4px 10px #222;
 }
 
 .tp-menu {
@@ -514,73 +520,73 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 1920px){
 	.descript {
-		font-size: 2.15vw !important;
+		font-size: 2vw !important;
 	}
 }
 
 @media only screen and (max-width: 1100px){
 	.descript {
-		font-size: 2.55vw !important;
+		font-size: 2.3vw !important;
 	}
 }
 
 @media only screen and (max-width: 1000px){
 	.descript {
-		font-size: 2.75vw !important;
+		font-size: 2.6vw !important;
 	}
 }
 
 @media only screen and (max-width: 900px){
 	.descript {
-		font-size: 2.95vw !important;
+		font-size: 2.8vw !important;
 	}
 }
 
 @media only screen and (max-width: 800px){
 	.descript {
-		font-size: 3.15vw !important;
+		font-size: 3vw !important;
 	}
 }
 
 @media only screen and (max-width: 600px){
 	.descript {
-		font-size: 4.35vw !important;
+		font-size: 4.2vw !important;
 	}
 }
 
 @media only screen and (max-width: 1920px){
 	.texto-flex {
-		font-size: 1.75vw !important;
+		font-size: 1.6vw !important;
 	}
 }
 
 @media only screen and (max-width: 1100px){
 	.texto-flex {
-		font-size: 2.05vw !important;
+		font-size: 1.9vw !important;
 	}
 }
 
 @media only screen and (max-width: 1000px){
 	.texto-flex {
-		font-size: 2.25vw !important;
+		font-size: 2.1vw !important;
 	}
 }
 
 @media only screen and (max-width: 900px){
 	.texto-flex {
-		font-size: 2.45vw !important;
+		font-size: 2.3vw !important;
 	}
 }
 
 @media only screen and (max-width: 800px){
 	.texto-flex {
-		font-size: 2.65vw !important;
+		font-size: 2.5vw !important;
 	}
 }
 
 @media only screen and (max-width: 600px){
 	.texto-flex {
-		font-size: 3.05vw !important;
+		font-size: 2.9vw !important;
 	}
 }
 
@@ -605,7 +611,7 @@ NAVBAR
 nav {
 	position: relative;
 	top: 0;
-	background-color: #fff;
+	background-color: #00b8c6;
 	width: 100%;
 }
 
@@ -646,7 +652,7 @@ FOOTER
 }
 
 .footer {
-	background-color: #435c7a;
+	background-color: #00b8c6;
 	color: #fff;
 }
 
