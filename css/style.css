@@ -312,7 +312,7 @@ CONTAINERS
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: #fff;
+	background-color: #00b8c6;
 }
 
 .tp-menu ul {
@@ -327,7 +327,7 @@ CONTAINERS
 	padding: 0;
 	margin: 0;
 	line-height: 50px;
-	background-color: #fff;
+	background-color: #00b8c6;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -335,7 +335,7 @@ CONTAINERS
 .tp-menu ul li a {
 	text-decoration: none;
 	font-family: 'Roboto Slab', serif;
-	color: #435c7a;
+	color: #fff;
 	font-weight: 900;
 	font-size: 15px;
 	letter-spacing: 1.5px;
