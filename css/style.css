@@ -19,7 +19,11 @@ CORES
 }
 
 .cor-texto{
-	color: #fff !important;
+	color: #555 !important;
+}
+
+.cor-texto .autoria{
+	color: #333 !important;
 }
 
 
@@ -396,7 +400,7 @@ CONTAINERS
 .autoria {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 900;
-	font-size: 0.85em;
+	font-size: 1vw;
 
 }
 
@@ -602,6 +606,37 @@ MEDIA QUERIES
 	}
 }
 
+@media only screen and (max-width: 1000px){
+	.autoria {
+		font-size: 1.25vw !important;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	.autoria {
+		font-size: 1.5vw !important;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.autoria {
+		font-size: 1.75vw !important;
+	}
+}
+
+@media only screen and (max-width: 700px){
+	.autoria {
+		font-size: 2vw !important;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.autoria {
+		font-size: 2.25vw !important;
+	}
+}
+
+
 
 
 
@@ -708,4 +743,43 @@ PARALLAX DIV
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+BACKGROUND IMAGES
+------------------------------------------------------------------*/
+.bg-1 {
+	background-image: url('../img/background_1.png');
+}
+
+.bg-2 {
+	background-image: url('../img/background_2.png');
+}
+
+.bg-3 {
+	background-image: url('../img/background_3.png');
+}
+
+.bg-4 {
+	background-image: url('../img/background_4.png');
+}
+
+.bg-card-1 {
+	background-image: url('../img/cards/bg_1.png');
+}
+
+.bg-card-2 {
+	background-image: url('../img/cards/bg_2.png');
+}
+
+.bg-card-3 {
+	background-image: url('../img/cards/bg_3.png');
+}
+
+.bg-card-4 {
+	background-image: url('../img/cards/bg_4.png');
 }
