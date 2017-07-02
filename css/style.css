@@ -26,6 +26,18 @@ CORES
 	color: #333 !important;
 }
 
+.d1 {
+	background-color: #3EFFBF!important;
+}
+
+.d2 {
+	background-color: #00FF8A !important;
+}
+
+.d3 {
+	background-color: #B0FF70 !important;
+}
+
 
 
 
@@ -87,10 +99,17 @@ body {
 h1 {
 	margin: 0 !important;
 }
+
 p {
 	color: #222 !important;
 	font-family:'Roboto', sans-serif;
 	font-weight: 300;
+}
+
+p a {
+	text-decoration: none;
+	font-weight: 400;
+	color: #00b8c6;
 }
 
 .card-link {
@@ -174,7 +193,7 @@ BOTÕES
 }
 
 .bt:hover {
-	background-color: #00daaa;
+	background-color: #90F070;
 	letter-spacing: 4px;
 	overflow: hidden;
 }
@@ -252,6 +271,7 @@ CONTAINERS
 	font-size: 6.5vw !important;
 }
 .card {
+	min-height: 410px;
 	background-color: #fff;
 	overflow: hidden;
 	border-radius: 4px;
@@ -285,7 +305,6 @@ CONTAINERS
 	padding-left: 10px;
 	width: 90px;
 	height: 40px;
-	background-color: #00ff8a;
 	color: #222;
 	font-size: 20px;
 	font-weight: 900;
@@ -316,7 +335,7 @@ CONTAINERS
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: #00b8c6;
+	background-color: #00D2E3;
 }
 
 .tp-menu ul {
@@ -331,7 +350,7 @@ CONTAINERS
 	padding: 0;
 	margin: 0;
 	line-height: 50px;
-	background-color: #00b8c6;
+	background-color: #00D2E3;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -518,7 +537,7 @@ MEDIA QUERIES
 @media only screen and (max-width: 685px){
 	.parallax-div {
 		background-attachment: scroll;
-		height: 450px !important;
+		height: 460px !important;
 	}
 }
 
@@ -646,7 +665,7 @@ NAVBAR
 nav {
 	position: relative;
 	top: 0;
-	background-color: #00b8c6;
+	background-color: #00D2E3;
 	width: 100%;
 }
 
@@ -687,7 +706,7 @@ FOOTER
 }
 
 .footer {
-	background-color: #00b8c6;
+	background-color: #00D2E3;
 	color: #fff;
 }
 
